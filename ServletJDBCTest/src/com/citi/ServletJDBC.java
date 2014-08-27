@@ -34,6 +34,8 @@ public class ServletJDBC extends HttpServlet {
 			System.out.println(driverName);
 			System.out.println(dbName);
 			
+			//Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
 			con=DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=Pune2014","Pune2014","pune2014");
